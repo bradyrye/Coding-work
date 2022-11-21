@@ -46,8 +46,6 @@ function draw()
     fill(123,40,123);
     circle(characterX,characterY,45);
 
-function charaterMovemnt()
-{
     // handle the keys
     if(keyIsDown(w))
     {
@@ -65,13 +63,12 @@ function charaterMovemnt()
     {
         characterX += 10;   
     }
-}
-function drawEnemy(x,y)
-{
+    function draw();
+    {
     // potential enemy
     fill(133,145,144);
     circle(shapeX, shapeY, 100);
-}
+
      shapeXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 3);
      shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 9);
 
@@ -94,13 +91,11 @@ function drawEnemy(x,y)
     {
         shapeY = height;
     }
-    function drawEnemy2()
-    {
+}
  // potential enemy 2
  fill(313,145,44);
 
  circle(shapeX2, shapeY2, 75);
-    }
   shapeXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 6)) + 9);
   shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 3)) + 2);
 
@@ -137,10 +132,16 @@ function drawEnemy(x,y)
     //click
     fill(320,30,40);
     circle(mouseShapeX, mouseShapeY, 160);
-}
 
 function mouseClicked()
 {
     mouseShapeX = mouseX;
     mouseShapeY = mouseY;
+}
+}
+function draw()
+{
+    drawEnemy(X,Y);
+    drawEnemy2(X2,Y2);
+    charactermovement();
 }
