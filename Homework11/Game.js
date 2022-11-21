@@ -1,6 +1,6 @@
 // x and y for my character
-var characterX = 100;
-var characterY = 100;
+var characterX = 150;
+var characterY = 150;
 // define the key codes for each letter
 var w = 87; 
 var s = 83;
@@ -8,8 +8,8 @@ var a = 65;
 var d = 68;
 
 // x and y for a shape
-var shapeX = 30;
-var shapeY = 50;
+var shapeX = 40;
+var shapeY = 60;
 var shapeXSpeed;
 var shapeYSpeed;
 var shapeX2 = 60;
@@ -46,6 +46,8 @@ function draw()
     fill(123,40,123);
     circle(characterX,characterY,45);
 
+function charaterMovemnt()
+{
     // handle the keys
     if(keyIsDown(w))
     {
@@ -63,11 +65,13 @@ function draw()
     {
         characterX += 10;   
     }
-
+}
+function drawEnemy(x,y)
+{
     // potential enemy
     fill(133,145,144);
     circle(shapeX, shapeY, 100);
-
+}
      shapeXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 3);
      shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 9);
 
@@ -90,11 +94,13 @@ function draw()
     {
         shapeY = height;
     }
+    function drawEnemy2()
+    {
  // potential enemy 2
  fill(313,145,44);
 
  circle(shapeX2, shapeY2, 75);
-
+    }
   shapeXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 6)) + 9);
   shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 3)) + 2);
 
