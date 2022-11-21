@@ -143,9 +143,9 @@ function draw()
 {
     drawEnemy(X,Y);
     drawEnemy2(X2,Y2);
-    charactermovement();
-    boarders();
-    exit();
-    text();
+    drawcharactermovement();
+    drawboarders();
+    drawexit();
+    drawtext();
     
 }
