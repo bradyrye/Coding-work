@@ -18,8 +18,7 @@ var shapeY2 = 20;
 //mouse is clicked
 var mouseShapeX;
 var mouseShapeY;
-function setup()
-{
+function setup(){
     createCanvas(700, 700);
     shapeXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
     shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
